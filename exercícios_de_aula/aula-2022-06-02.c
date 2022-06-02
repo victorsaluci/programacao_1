@@ -27,9 +27,9 @@ scanf ("%f", & sexta);
 printf ("informe o valor recebido na sexta:\n");
 scanf ("%f", &pagasex);
 soma= segunda+terca+quarta+quinta+sexta;
-saldo= pagaseg+pagater+pagaqua+pagaquin+pagasex
-saldopos= soma-saldo
-if soma > 2000
+saldo= pagaseg+pagater+pagaqua+pagaquin+pagasex;
+saldopos= soma-saldo;
+if (soma > 2000)
 printf("o valor recebido na semana é:
 
 
