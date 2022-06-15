@@ -4,7 +4,7 @@ int idade;
   printf ("Digite a idade do nadador: \n");
   scanf ("%d", & idade);
   if (idade <5)
-    printf ("Idade menor do que a exigida para participação");
+    printf ("A idade é menor do que a exigida para participação");
   else if (idade >= 5 && idade <= 7)
     printf ("Categoria Infantil A");
   else if (idade >=8 && idade <=10)
