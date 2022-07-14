@@ -1,14 +1,19 @@
 # include <stdio.h>
+# include <stdlib.h>
 int main ()
 {
-  int num, flag, i;
-  printf ("escreva um numero:");
-  scanf ("%d", & num);
-  flag= 0;
-  for (i=2 ; i<num-1 ; i++) {
-      if (num % i == 0)
-         flag = 1;
+  int num, flag, i, vet[50];
+  for (i=0; i<50; i++)
+      vet[i]= rand ()%100;
+      
+  for (pos=0; pos<50;pos++)
+  {
+       flag=0;
+       for (i=2; i<vet[pos]-1; i++){
+            if (vet[pos] % i ==0)
+                flag = 1;
+       }
+       if (flag==0)
+          printf("pos %d:%d é primo\n", pos, vet[pos]);
    }
-   if (flag == 0) printf("%d é primo\n", num);
-   else           printf("%d NÂO é primo\n",num);
 }
